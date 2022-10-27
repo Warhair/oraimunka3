@@ -1,0 +1,43 @@
+main, nav, header, article, section, footer {
+    border : gray solid 1px;
+    padding : 10px;
+    }
+    .nagykep img, .kep img {
+    width : 100%;
+    }
+    .kiskep {
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+    }
+    nav {
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr;
+    list-style-type : none;
+    background-color : gray;
+    }
+    nav a {
+    color : white;
+    text-decoration : none;
+    }
+    nav .kezdolap {
+    display : inline-block;
+    background-color : rgb(224, 64, 104);
+    width : 100px;
+    }
+    nav .masik a {
+    color : brown;
+    }
+    @media screen and (max-width: 800px) {
+    .kiskep {
+    display : grid;
+    grid-template-columns : 1fr;
+    }
+    nav > ul {
+    display : grid;
+    grid-template-columns : 1fr;
+    }
+    nav {
+    display : grid;
+    grid-template-columns : 60% auto;
+    }
+    }
